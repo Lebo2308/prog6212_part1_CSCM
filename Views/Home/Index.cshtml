@@ -2,3 +2,43 @@
     ViewData["Title"] = "Home Page";
 }
 
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login Page</title>
+    </head>
+    <body>
+        <div class="main-content">
+            <!-- Login Page -->
+            <div id="login" class="page">
+                <div class="form-container">
+                    <h2>Welcome</h2>
+                    <p>Log in with your email(username)</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="login-email">Email(Username)</label>
+                            <input type="text" id="login-email" placeholder="Enter your email(username)">
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" placeholder="Enter your password">
+                        </div>
+                        <div class="form-group">
+                            <label for="login-role">Role</label>
+                            <select id="login-role">
+                                <option value="lecturer"> Lecturer </option>
+                                <option value="program coordinate"> Program Coordinator (PC) </option>
+                                <option value="program manager"> Program Manager (PM) </option>
+                            </select>
+                        </div>
+                        <a href="@Url.Action("Dashboard","Home")" class="btn">Login</a>
+                    </form>
+                    <div class="toggle-form">
+                        <p>Don't have an account? <a href="@Url.Action("Register","Home")">Register</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
