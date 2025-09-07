@@ -28,6 +28,31 @@ namespace prog6212_part1_CSCM.Controllers
             return View();
         }
 
+        public IActionResult ApproveClaim()
+        {
+            return View();
+        }
+
+        public IActionResult PreapproveClaim()
+        {
+            return View();
+        }
+
+        public IActionResult Profile()
+        {
+            return View();
+        }
+
+        public IActionResult SubmitAClaim()
+        {
+            return View();
+        }
+
+        public IActionResult TrackClaim()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
