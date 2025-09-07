@@ -2,3 +2,50 @@
     ViewData["Title"] = "Privacy Policy";
 }
 
+<!-- Registration Form -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration Page</title>
+    </head>
+    <body>
+        <div class="main-content">
+            <div id="register-form" class="form-container">
+                <h2>Register</h2>
+                <p>Create a New Account</p>
+                <form>
+                    <div class="form-group">
+                        <label for="register-name">Full Name</label>
+                        <input type="text" id="register-name" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email Address(Username)</label>
+                        <input type="email" id="register-email" placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-userid">User ID</label>
+                        <input type="text" id="register-userid" placeholder="Choose a user ID">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" placeholder="Create a password">
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">Confirm Password</label>
+                        <input type="password" id="register-confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-role">Role</label>
+                        <select id="register-role">
+                            <option value="">Select your role</option>
+                            <option value="lecturer">Lecturer</option>
+                            <option value="program coordinator">Program Coordinator (PC)</option>
+                            <option value="program manager">Program Manager (PM)</option>
+                        </select>
+                    </div>
+                    <a href="@Url.Action("Dashboard","Register")" class="btn">Register</a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
