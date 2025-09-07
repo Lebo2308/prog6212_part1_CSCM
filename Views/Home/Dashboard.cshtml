@@ -10,7 +10,20 @@
     </head>
     <body>
         <header>
-            
+            <div class="header-container">
+                <h1>CSCM</h1>
+                <nav>
+                    <ul>
+                        <li><a href="@Url.Action("Dashboard","Home")">Home</a></li>
+                        <li><a href="@Url.Action("SubmitClaim","Home")">Submit a Claim</a></li>
+                        <li><a href="@Url.Action("TrackClaim","Home")">Track Claim</a></li>
+                        <li><a href="@Url.Action("PreApproveClaim","Home")">Pre-Approve Claim</a></li>
+                        <li><a href="@Url.Action("ApproveClaim","Home")">Approve Claim</a></li>
+                        <li><a href="@Url.Action("Profile","Home")">Profile</a></li>
+                        <li><a href="@Url.Action("Index","Home")">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <div class="content">
             <h1>Welcome dashboard</h1>
