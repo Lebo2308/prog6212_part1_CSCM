@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
+	<!-- Header with navigation menu -->
     <header>
         <div class="header-container">
             <h1>CSCM</h1>
@@ -28,9 +29,10 @@
         </div>
     </header>
     <div class="content">
-        
-            <div id="track-claims" class="page">
-                <h2>Pre-Approve Claims</h2>
+        <!-- Pre-Approve Claim Page -->
+        <div id="track-claims" class="page">
+            <h2>Pre-Approve Claims</h2>
+                <!-- Claims table displaying all claim information -->
                 <table>
                     <thead>
                         <tr>
@@ -49,6 +51,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Claim 1 - Pre-Approved -->
                         <tr>
                             <td class="claim-id">CLAIM-001</td>
                             <td class="user-id">L103251</td>
@@ -68,6 +71,7 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- Claim 2 - Rejected -->
                         <tr>
                             <td class="claim-id">CLAIM-002</td>
                             <td class="user-id">L102895</td>
@@ -87,6 +91,7 @@
 								</div> 
                             </td>
                         </tr>
+					    <!-- Claim 3 - Pre-Approved -->
                         <tr>
                             <td class="claim-id">CLAIM-003</td>
                             <td class="user-id">L103251</td>
@@ -106,6 +111,7 @@
                                 </div>
                             </td>
                         </tr>
+					    <!-- Claim 4 - Pending -->
                         <tr>
                             <td class="claim-id">CLAIM-004</td>
                             <td class="user-id">L103210</td>
@@ -125,6 +131,7 @@
                                 </div>
                             </td>
                         </tr>
+					    <!-- Claim 5 - Pending -->
                         <tr>
                             <td class="claim-id">CLAIM-005</td>
 							<td class="user-id">L102895</td>
@@ -149,6 +156,7 @@
             </div>
         
     </div>
+    <!-- Footer with copyright information -->
     <footer>
         <div class="foot_container">
             &copy; 2025 - Contract Monthly Claim System (CMCS) | Designed for independent contractors' use

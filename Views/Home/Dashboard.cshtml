@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     </head>
     <body>
+        <!-- Header with navigation menu -->
         <header>
             <div class="header-container">
                 <h1>CSCM</h1>
@@ -27,6 +28,7 @@
             </div>
         </header>
         <div class="content">
+        <!-- Dashboard Page -->
         <div id="dashboard" class="page">
             <h2>Welcome, Dr. Molebogeng Thupi!</h2>
             <p>Role: Lecturer/PC/PM</p>
@@ -35,27 +37,26 @@
                 approvals, and tracking.Your one-stop platform for managing contract monthly claims efficiently.</p>
 
             <div class="dashboard">
-                
-
+                <!-- Lecturer Quick Actions Card -->
                 <div class="dashboard-card">
                     <h3>Lecturer Quick Actions</h3>
                     <p>Submit a new claim </p>
                     <a href="@Url.Action("SubmitAClaim","Home")" class="btn"> Submit New Claim</a>
 
                 </div>
-
+                <!-- Program Coordinator Quick Actions Card -->
                 <div class="dashboard-card">
                     <h3>PC Quick Actions</h3>
                     <p>Pre-approve claims </p>
                     <a href="@Url.Action("PreapproveClaim","Home")" class="btn">Pre-Approve Claims</a>
                 </div>
-
+                <!-- Program Manager Quick Actions Card -->
 				<div class="dashboard-card">
 					<h3>PM Quick Actions</h3>
 					<p>Approve claims or track existing claims</p>
 					<a href="@Url.Action("ApproveClaim","Home")" class="btn">Approve Claims</a>
                 </div>
-
+                <!-- Recent Activity Card -->
                 <div class="dashboard-card">
                     <h3>Recent Activity</h3>
                     <p>Claim #CLAIM-003 was approved</p>
@@ -64,6 +65,7 @@
             </div>
         </div>
         </div>
+        <!-- Footer with copyright information -->
         <footer>
             <div class="foot_container">
                 &copy; 2025 - Contract Monthly Claim System (CMCS) | Designed for independent contractors' use

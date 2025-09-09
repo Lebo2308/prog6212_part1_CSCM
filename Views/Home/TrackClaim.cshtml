@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
+	<!-- Header with navigation menu -->
     <header>
         <div class="header-container">
             <h1>CSCM</h1>
@@ -28,8 +29,10 @@
         </div>
     </header>
     <div class="content">
+		<!-- Track Claim Page -->
         <div id="track-claims" class="page">
             <h2>My Claims</h2>
+			<!-- Claims table displaying all claim information -->
             <table>
                 <thead>
                     <tr>
@@ -47,6 +50,7 @@
                     </tr>
                 </thead>
                 <tbody>
+					<!-- Claim 1 - Pre-Approved -->
                     <tr>
                         <td class="claim-id">CLAIM-001</td>
                         <td>2025-09-10</td>
@@ -60,6 +64,7 @@
                         <td>2025-09-15</td>
                         <td><span class="status status-pre-approved">Pre-Approved</span></td>
                     </tr>
+					<!-- Claim 2 - Rejected -->
                     <tr>
                         <td class="claim-id">CLAIM-002</td>
                         <td>2025-09-15</td>
@@ -73,6 +78,7 @@
                         <td>-</td>
                         <td><span class="status status-rejected">Rejected</span></td>
                     </tr>
+					<!-- Claim 3 - Approved -->
                     <tr>
                         <td class="claim-id">CLAIM-003</td>
                         <td>2025-09-20</td>
@@ -86,6 +92,7 @@
                         <td>2025-09-25</td>
                         <td><span class="status status-approved">Approved</span></td>
                     </tr>
+                    <!-- Claim 4 - Pending -->
                     <tr>
                         <td class="claim-id">CLAIM-004</td>
                         <td>2025-10-05</td>
@@ -99,6 +106,7 @@
                         <td>-</td>
                         <td><span class="status status-pending">Pending</span></td>
                     </tr>
+                    <!-- Claim 5 - Pending  -->
                     <tr>
                         <td class="claim-id">CLAIM-005</td>
                         <td>2023-10-12</td>
@@ -116,6 +124,7 @@
             </table>
         </div>
     </div>
+    <!-- Footer with copyright information -->
     <footer>
         <div class="foot_container">
             &copy; 2025 - Contract Monthly Claim System (CMCS) | Designed for independent contractors' use
