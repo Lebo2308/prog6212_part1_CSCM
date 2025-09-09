@@ -8,6 +8,7 @@
 <html lang="en">
 <head>
     <title>Profile Page | CSCM</title>
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
     <header>
@@ -27,7 +28,158 @@
         </div>
     </header>
     <div class="content">
-        <h1>Profile </h1>
+        <div class="page">
+            <div class="page-header">
+                <h1 class="page-title">Profile Management</h1>
+                <span class="badge">Lecturer/PC/PM</span>
+            </div>
+
+            <div class="profile-container">
+                <div class="profile-sidebar">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="profile-info">
+                                <h2>Dr. Molebogeng Thupi</h2>
+                                <p>thupim@university.ac.za</p>
+                            </div>
+                        </div>
+
+                        <div class="profile-stats">
+                            <div class="stat-card">
+                                <div class="stat-number">12</div>
+                                <div class="stat-label">Claims</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">8</div>
+                                <div class="stat-label">Approved</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">2</div>
+                                <div class="stat-label">Pending</div>
+                            </div>
+                        </div>
+
+                        <div class="profile-actions">
+                            <a href="#" class="btn"><i class="fas fa-download"></i> Export Data</a>
+                        </div>
+                    </div>
+
+                    <div class="profile-card">
+                        <h3 class="form-section-title">Security</h3>
+                        <div class="form-group">
+                            <label>Last Login</label>
+                            <p>2025-09-08 14:32</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Account Status</label>
+                            <p><span class="status status-approved">Active</span></p>
+                        </div>
+                        <a href="#" class="btn btn-secondary"><i class="fas fa-lock"></i> Change Password</a>
+                    </div>
+                </div>
+
+                <div class="profile-main">
+                    <div class="profile-card">
+                        <h3 class="form-section-title">Personal Information</h3>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" value="Molebogeng">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" value="Thupi">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <select id="title">
+                                        <option value="dr" selected>Dr.</option>
+                                        <option value="prof">Prof.</option>
+                                        <option value="mr">Mr.</option>
+                                        <option value="mrs">Mrs.</option>
+                                        <option value="ms">Ms.</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="department">Department</label>
+                                    <input type="text" id="department" value="Computer Science">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bio">Bio</label>
+                                <textarea id="bio" rows="3">Senior Lecturer in Computer Science with focus on software engineering and distributed systems.</textarea>
+                            </div>
+
+                            <div class="action-buttons">
+                                <button type="submit" class="btn"><i class="fas fa-save"></i> Save Changes</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="profile-card">
+                        <h3 class="form-section-title">Contact Information</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" value="thupim@university.ac.za">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" value="+27 12 345 6789">
+                                </div>
+                                <div class="form-group">
+                                    <label for="office">Office Number</label>
+                                    <input type="text" id="office" value="CS Building, Room 305">
+                                </div>
+                            </div>
+
+                            <div class="action-buttons">
+                                <button type="submit" class="btn"><i class="fas fa-save"></i> Save Changes</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="profile-card">
+                        <h3 class="form-section-title">Banking Details</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="bankName">Bank Name</label>
+                                <input type="text" id="bankName" value="Standard Bank">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="accountNumber">Account Number</label>
+                                    <input type="text" id="accountNumber" value="XXXX XXXX 1234">
+                                </div>
+                                <div class="form-group">
+                                    <label for="branchCode">Branch Code</label>
+                                    <input type="text" id="branchCode" value="123456">
+                                </div>
+                            </div>
+
+                            <div class="action-buttons">
+                                <button type="submit" class="btn"><i class="fas fa-save"></i> Save Changes</button>
+                                <button type="reset" class="btn btn-secondary">Cancel</button>
+                                <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i> Remove</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="foot_container">
