@@ -8,6 +8,7 @@
 <html lang="en">
 <head>
     <title>PreApprove Page</title>
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
@@ -27,7 +28,126 @@
         </div>
     </header>
     <div class="content">
-        <h1>PreApprove claim</h1>
+        <div class="content">
+            <div id="track-claims" class="page">
+                <h2>Pre-Approve Claims</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Claim ID</th>
+                            <th>User ID</th>
+                            <th>Date Submitted</th>
+                            <th>Faculty Name</th>
+                            <th>Module Name</th>
+                            <th>Number Of Hours Worked</th>
+                            <th>Rate: Amount Per Hour</th>
+                            <th>Total Amount</th>
+                            <th>Supporting Documents</th>
+                            <th>Pre-Approve Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="claim-id">CLAIM-001</td>
+                            <td class="user-id">L103251</td>
+                            <td>2023-09-10</td>
+                            <td>Faculty of Science</td>
+                            <td>Research Materials</td>
+                            <td>10</td>
+                            <td>R 350.00</td>
+                            <td>R 3,500.00</td>
+                            <td><a href="#" class="support-link">receipt_001.pdf</a></td>
+                            <td>2023-09-12</td>
+                            <td><span class="status status-pre-approved">Pre-Approved</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn approve-btn">Pre-Approve</button>
+                                    <button class="action-btn reject-btn">Reject</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="claim-id">CLAIM-002</td>
+                            <td class="user-id">L102895</td>
+                            <td>2023-09-15</td>
+                            <td>Faculty of Business</td>
+                            <td>Conference Registration</td>
+                            <td>5</td>
+                            <td>R 500.00</td>
+                            <td>R 2,500.00</td>
+                            <td><a href="#" class="support-link">conference_invoice.pdf</a></td>
+                            <td>2023-09-17</td>
+                            <td><span class="status status-rejected">Rejected</span></td>
+							<td>
+								<div class="action-buttons">
+									<button class="action-btn approve-btn">Pre-Approve</button>
+									<button class="action-btn reject-btn">Reject</button>
+								</div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="claim-id">CLAIM-003</td>
+                            <td class="user-id">L103251</td>
+                            <td>2023-09-20</td>
+                            <td>Faculty of Engineering</td>
+                            <td>Travel Expenses</td>
+                            <td>15</td>
+                            <td>R 400.00</td>
+                            <td>R 6,000.00</td>
+                            <td><a href="#" class="support-link">travel_receipts.zip</a></td>
+                            <td>2023-09-22</td>
+                            <td><span class="status status-approved">Pre-Approved</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn approve-btn">Pre-Approve</button>
+                                    <button class="action-btn reject-btn">Reject</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="claim-id">CLAIM-004</td>
+                            <td class="user-id">L103210</td>
+                            <td>2023-10-05</td>
+                            <td>Faculty of Arts</td>
+                            <td>Workshop Materials</td>
+                            <td>15</td>
+                            <td>R 250.00</td>
+                            <td>R 3,750.00</td>
+                            <td><a href="#" class="support-link">workshop_receipt.pdf</a></td>
+                            <td>-</td>
+                            <td><span class="status status-pending">Pending</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn approve-btn">Pre-Approve</button>
+                                    <button class="action-btn reject-btn">Reject</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="claim-id">CLAIM-005</td>
+							<td class="user-id">L102895</td>
+                            <td>2023-10-12</td>
+                            <td>Faculty of Technology</td>
+                            <td>Academic Software License</td>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            <td>R 4,500.00</td>
+                            <td><a href="#" class="support-link">software_license.pdf</a></td>
+                            <td>-</td>
+                            <td><span class="status status-pending">Pending</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="action-btn approve-btn">Pre-Approve</button>
+                                    <button class="action-btn reject-btn">Reject</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="foot_container">
