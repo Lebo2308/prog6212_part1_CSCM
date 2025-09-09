@@ -8,6 +8,7 @@
 <html lang="en">
 <head>
     <title>Submit a claim Page</title>
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
@@ -27,7 +28,6 @@
         </div>
     </header>
     <div class="content">
-        <!-- Submit Claim Page -->
         <div id="submit-claim" class="page">
             <h2>Submit New Claim</h2>
             <div class="form-container">
@@ -56,7 +56,7 @@
                         <label for="upload-documents">Upload Supporting Document(s)</label>
                         <input type="file" id="upload-documents">
                     </div>
-                    <a href="@Url.Action("TrackClaim","Home")" class="btn">Submit Claim</a>
+                    <a href="@Url.Action("TrackClaim","Home")" class="btn"><i class="fas fa-paper-plane"></i>Submit Claim</a>
                 </form>
             </div>
         </div>
