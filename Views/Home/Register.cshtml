@@ -10,31 +10,41 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     </head>
     <body>
+        <!-- Main container for the Registration form -->
         <div class="main-content">
+            <!-- Registration Form Container -->
             <div id="register-form" class="form-container">
+			    <!-- Registration Form Heading -->
                 <h2>Register</h2>
                 <p>Create a New Account</p>
+			    <!-- Registration Form -->
                 <form>
+                    <!-- Full Name Input Field -->
                     <div class="form-group">
                         <label for="register-name">Full Name</label>
                         <input type="text" id="register-name" placeholder="Enter your full name">
                     </div>
+                    <!-- Email Address Input Field -->
                     <div class="form-group">
                         <label for="register-email">Email Address(Username)</label>
                         <input type="email" id="register-email" placeholder="Enter your email address">
                     </div>
+				    <!-- User ID Input Field -->
                     <div class="form-group">
                         <label for="register-userid">User ID</label>
                         <input type="text" id="register-userid" placeholder="Choose a user ID">
                     </div>
+				    <!-- Password Input Field -->
                     <div class="form-group">
                         <label for="register-password">Password</label>
                         <input type="password" id="register-password" placeholder="Create a password">
                     </div>
+				    <!-- Confirm Password Input Field -->
                     <div class="form-group">
                         <label for="register-confirm-password">Confirm Password</label>
                         <input type="password" id="register-confirm-password" placeholder="Confirm your password" required>
                     </div>
+				    <!-- Role Selection Dropdown -->
                     <div class="form-group">
                         <label for="register-role">Role</label>
                         <select id="register-role">
@@ -44,8 +54,10 @@
                             <option value="program manager">Program Manager (PM)</option>
                         </select>
                     </div>
+				    <!-- Register Button -->
                     <a href="@Url.Action("Dashboard","Home")" class="btn">Register</a>
                 </form>
+			    <!-- Toggle to Login Form -->
 			    <div class="toggle-form">
                     <p>Already have an account? <a href="@Url.Action("Index","Home")">Login</a></p> 
                 </div>

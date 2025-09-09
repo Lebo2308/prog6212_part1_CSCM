@@ -10,20 +10,27 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     </head>
     <body>
+        <!-- Main container for the login form -->
         <div class="main-content">
+            <!-- Login Form Container -->
             <div id="login" class="page">
                 <div class="form-container">
+                    <!-- Login Form Heading -->
                     <h2>Welcome</h2>
                     <p>Log in with your email(username)</p>
+                    <!-- Login Form -->
                     <form>
+                        <!-- Email/Username Input Field -->
                         <div class="form-group">
                             <label for="login-email">Email(Username)</label>
                             <input type="text" id="login-email" placeholder="Enter your email(username)">
                         </div>
+					    <!-- Password Input Field -->
                         <div class="form-group">
                             <label for="login-password">Password</label>
                             <input type="password" id="login-password" placeholder="Enter your password">
                         </div>
+					    <!-- Role Selection Dropdown -->
                         <div class="form-group">
                             <label for="login-role">Role</label>
                             <select id="login-role">
@@ -33,8 +40,10 @@
                                 <option value="program manager"> Program Manager (PM) </option>
                             </select>
                         </div>
+					    <!-- Login Button -->
                         <a href="@Url.Action("Dashboard","Home")" class="btn">Login</a>
                     </form>
+				    <!-- Toggle to Registration Form -->
                     <div class="toggle-form">
                         <p>Don't have an account? <a href="@Url.Action("Register","Home")">Register</a></p>
                     </div>
