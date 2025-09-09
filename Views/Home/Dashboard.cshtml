@@ -7,6 +7,7 @@
 <html lang="en">
     <head>
         <title>Dashboard Page</title>
+        <link rel="stylesheet" href="~/css/site.css" />
     </head>
     <body>
         <header>
@@ -26,7 +27,6 @@
             </div>
         </header>
         <div class="content">
-        <!-- Dashboard Page -->
         <div id="dashboard" class="page">
             <h2>Welcome, Dr. Molebogeng Thupi!</h2>
             <p>Role: Lecturer/PC/PM</p>
@@ -40,7 +40,7 @@
                 <div class="dashboard-card">
                     <h3>Quick Actions</h3>
                     <p>Submit a new claim or track existing claims</p>
-                    <a href="#submit-claim" class="btn" style="margin-top: 15px;">Submit New Claim</a>
+                    <a href="@Url.Action("SubmitAClaim","Home")" class="btn"> Submit New Claim</a>
                 </div>
 
                 <div class="dashboard-card">
